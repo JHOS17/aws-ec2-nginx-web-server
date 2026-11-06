@@ -79,7 +79,7 @@ aws-ec2-nginx-web-server/
 
 ## Evidencias
 
-Las capturas de pantalla del despliegue, configuración DNS, servidor Nginx y sitios web se encuentran en el directorio `screenshots/`.
+Las capturas de pantalla del despliegue, configuración DNS, servidor Nginx y sitios web se encuentran en el directorio `/Capturas-AWS`.
 
 ## Seguridad
 
