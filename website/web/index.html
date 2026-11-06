@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mi Startup</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { background:linear-gradient(135deg,#667eea,#764ba2);
+           min-height:100vh; display:flex; flex-direction:column;
+           align-items:center; justify-content:center;
+           font-family:'Segoe UI',sans-serif; color:white; text-align:center; }
+    h1   { font-size:3.5rem; font-weight:900; margin-bottom:0.5rem;
+           text-shadow:0 2px 20px rgba(0,0,0,0.3); }
+    p    { font-size:1.1rem; opacity:.85; margin-bottom:1rem; }
+    .pill { background:rgba(255,255,255,0.2);
+            backdrop-filter:blur(10px); padding:10px 28px;
+            border-radius:30px; font-size:1rem;
+            border:1px solid rgba(255,255,255,.3); display:inline-block; }
+    footer { position:fixed; bottom:20px;
+             font-size:.75rem; opacity:.5; }
+  </style>
+</head>
+<body>
+  <h1>✨ ¡Hola Mundo!</h1>
+  <p>Esta web vive en:</p>
+  <div class="pill" id="host"></div>
+  <footer>Desplegada con Nginx + Let's Encrypt 🔒</footer>
+  <script>
+    document.getElementById('host').textContent
+      = window.location.hostname;
+  </script>
+</body>
+</html>
